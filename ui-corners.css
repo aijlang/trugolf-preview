@@ -1,0 +1,16 @@
+/* Shared, subtle corners for controls and content cards. */
+:root{--control-radius:6px;--card-radius:10px}
+.button,.solution-page .btn,.nav-cta,.support-ribbon a,
+.support-quick-links a,.kb-link,.page-jumps a,
+.jump-links a,.connect-gallery-controls button,
+.tabs button,.resource-controls button,
+button:not(.detail-button):not(.video-toggle):not(.arcade-film-toggle):not(.close):not(.film),
+input:not([type="checkbox"]):not([type="radio"]),select,textarea{border-radius:var(--control-radius)}
+.product,.comparison-card,.image-content-card,
+.contact-info-grid>article,.help-paths>a,.help-paths>article,
+.feature-grid>article,.ownership-grid>article,.operations-grid>article,
+.range-benefits>article,.range-reviews>article,.arcade-games article,
+.monitor-section,.monitor-setup,.connect-platform-callout,
+.arcade-requirements,.resource-library article,.resource-library details,
+.pricing-table-scroll,.table-wrap,dialog{border-radius:var(--card-radius)}
+.product,.comparison-card,.image-content-card,.pricing-table-scroll,.table-wrap{overflow:hidden}
