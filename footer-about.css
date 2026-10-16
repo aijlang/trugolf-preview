@@ -33,3 +33,6 @@ body footer.site-footer .footer-newsletter small,body footer.site-footer .site-f
 body footer.site-footer a:hover{color:#345b19}
 body footer.site-footer .footer-newsletter>a{color:#17251d}
 body footer.site-footer .brand img{filter:none}
+
+/* Keep complete software screenshots visible, without the course overlay. */
+.premium-home .software-stage.screen-mode>#feature-image{object-fit:contain;object-position:center;filter:none}.premium-home .software-stage.screen-mode .stage-shade{background:none}
