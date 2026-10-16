@@ -6,7 +6,7 @@ heroVideo.defaultMuted = true;
 heroVideo.muted = true;
 heroVideo.playsInline = true;
 heroVideo.autoplay = true;
-heroVideo.playbackRate = 0.8;
+heroVideo.playbackRate = 1;
 let userPaused = false;
 let playPending = false;
 let playing = false;
@@ -44,7 +44,6 @@ async function startPlayback() {
 heroVideo.addEventListener('playing', showPlayback);
 heroVideo.addEventListener('timeupdate', () => {
   showPlayback();
-  if (heroVideo.currentTime >= 15) heroVideo.currentTime = 0;
 });
 for (const event of ['loadeddata', 'canplay']) {
   heroVideo.addEventListener(event, () => {

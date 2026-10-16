@@ -39,3 +39,24 @@ body footer.site-footer .brand img{filter:none}
 
 /* Space the E6 Golf section navigation clearly at every width. */
 .e6-golf-page .jump-links-row>.container{display:flex;align-items:center;flex-wrap:wrap;gap:18px 32px;padding-top:24px;padding-bottom:24px}.e6-golf-page .jump-links-headline{flex:none;margin:0;font-size:16px;line-height:1.5;letter-spacing:0}.e6-golf-page .jump-links{display:flex;align-items:center;flex-wrap:wrap;gap:16px 30px;margin:0}.e6-golf-page .jump-links a{display:inline-block;padding:8px 0;font-size:14px;line-height:1.5}@media(max-width:700px){.e6-golf-page .jump-links-row>.container{gap:12px 24px}.e6-golf-page .jump-links{gap:10px 22px}}
+
+/* Align the CONNECT callout and actions with consistent vertical rhythm. */
+#e6-connect .connect-platform-callout{margin:24px 0;padding:16px 20px}
+#e6-connect .connect-platform-callout strong{font-size:16px;line-height:1.5}
+#e6-connect .connect-action-row{display:flex;align-items:center;flex-wrap:wrap;gap:14px}
+#e6-connect .connect-action-row .button{margin:0;min-height:50px;display:inline-flex;align-items:center;justify-content:center}
+/* Keep landscape footage complete on portrait screens instead of zooming into its center. */
+@media(max-width:700px){
+.premium-home .hero{height:auto;min-height:100svh;max-height:none;background:#0a2632;display:flex;flex-direction:column;padding-top:74px}
+.premium-home .hero-video,.premium-home .hero-image{top:74px;bottom:auto;height:auto;aspect-ratio:16/9;width:100%;object-fit:contain;object-position:center}
+.premium-home .hero-shade{background:linear-gradient(180deg,transparent 74px,transparent 25%,#0a2632 52%)}
+.premium-home .hero-content{position:relative;left:auto;right:auto;bottom:auto;padding:calc(56.25vw + 28px) 6% 110px;z-index:2}
+.premium-home .hero h1{font-size:clamp(36px,10.5vw,48px);max-width:none}
+.premium-home .hero-description{gap:20px}
+.premium-home .video-toggle{top:calc(74px + 56.25vw - 42px);bottom:auto;right:6%;font-size:11px;padding:8px 12px;z-index:4}
+.premium-home .hero-bottom{bottom:0}
+#e6-connect .connect-action-row{gap:12px}
+#e6-connect .connect-action-row .button{flex:1 1 190px}
+}
+
+@media(max-width:700px){.premium-home .hero h1 span{display:inline}}
