@@ -36,3 +36,6 @@ body footer.site-footer .brand img{filter:none}
 
 /* Keep complete software screenshots visible, without the course overlay. */
 .premium-home .software-stage.screen-mode>#feature-image{object-fit:contain;object-position:center;filter:none}.premium-home .software-stage.screen-mode .stage-shade{background:none}
+
+/* Space the E6 Golf section navigation clearly at every width. */
+.e6-golf-page .jump-links-row>.container{display:flex;align-items:center;flex-wrap:wrap;gap:18px 32px;padding-top:24px;padding-bottom:24px}.e6-golf-page .jump-links-headline{flex:none;margin:0;font-size:16px;line-height:1.5;letter-spacing:0}.e6-golf-page .jump-links{display:flex;align-items:center;flex-wrap:wrap;gap:16px 30px;margin:0}.e6-golf-page .jump-links a{display:inline-block;padding:8px 0;font-size:14px;line-height:1.5}@media(max-width:700px){.e6-golf-page .jump-links-row>.container{gap:12px 24px}.e6-golf-page .jump-links{gap:10px 22px}}
